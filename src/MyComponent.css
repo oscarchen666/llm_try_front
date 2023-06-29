@@ -1,0 +1,74 @@
+.container {  
+    display: flex;  
+    height: 100vh;  
+  }  
+    
+  .input-container {  
+    position: relative;  
+    width: 300px;  
+    height: 100%;  
+  }  
+    
+  .input {  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 70%;  
+    height: 30px;  
+  }
+
+  .button {  
+    margin-top: 50px;  
+    padding: 8px 16px;  
+    background-color: #007bff;  
+    color: #fff;  
+    border: none;  
+    border-radius: 4px;  
+    cursor: pointer;  
+  }
+  
+  .readonly-text {  
+    margin-top: 10px;  
+    display: block;  
+    color: #333;  
+  }  
+    
+  .table-container {  
+    flex: 1;  
+    display: flex;
+    overflow: auto;
+  }  
+  
+  .table-wrapper {  
+    flex: 1;  
+    overflow-y: scroll;  
+    max-height: 100%; /* 设置表格的最大高度，超过该高度会出现垂直滚动条 */  
+    width: 60%;  
+  }
+
+  .left-table,  
+  .right-table {  
+    flex: 1;  
+    border-collapse: collapse; 
+  }  
+    
+  .right-table {  
+    margin-left: 20px;  
+  }  
+  
+  th,  
+  td {  
+    border: 1px solid #ccc;  
+    padding: 8px;
+    position: relative; /* 添加相对定位，用于索引的显示 */   
+  }  
+    
+  th {  
+    background-color: #f2f2f2;  
+  }
+
+  .clickable-id:hover {  
+    cursor: pointer;  
+    font-weight: bold;  
+    text-decoration: underline;  
+  }  
